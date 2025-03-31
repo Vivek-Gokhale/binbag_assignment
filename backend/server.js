@@ -13,8 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files for profile and expense images
-app.use('/profile-image', express.static(path.join(__dirname, 'images')));
-app.use('/expense-image', express.static(path.join(__dirname, 'billsImage')));
+app.use('/profile-image', express.static(path.join(__dirname, 'uploads')));
 
 // Routes
 app.use('/', routes);
